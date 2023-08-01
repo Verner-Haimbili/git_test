@@ -1,0 +1,59 @@
+### 1. How do you create a new repository on GitHub?
+Answer:
+-Once you're logged in, click on the "+" sign in the top right corner of the GitHub interface and then select "New repository."
+
+Repository details:
+-Repository name: Choose a name for your repository. Make sure it is descriptive and relevant to the project.
+-Description (optional): Add a brief description of your repository.
+-Public or Private: Choose whether you want the repository to be public (visible to everyone) or private (visible only to you and collaborators).
+-Initialize this repository with a README: If you want to start with a README file (recommended), check this option.
+
+### 2. How do you copy a repository onto your local machine from GitHub?
+Answer: 
+- Go to the GitHub repository you want to copy, and click on the "Code" button (green button on the right side). Copy the URL shown in the input box, which should look like "https://github.com/username/repository.git" or "git@github.com:username/repository.git"
+- On your local machine, open a terminal or command prompt. This is where you'll enter the git commands.
+- If you want to clone the repository into a specific directory, navigate to that directory using the "cd" command. For example: cd /path/to/your/directory
+- In the terminal, use the "git clone" command followed by the repository URL you copied in step 1. It will look like this: git clone https://github.com/username/repository.git or git clone git@github.com:username/repository.git
+
+### 3. What is the default name of your remote connection?
+Answer: 
+- The default name of the remote connection in Git is typically "origin.
+
+### 4. Explain what origin is in git push origin main.
+Answer: 
+- In the command git push origin main, "origin" is the name of the remote repository, and "main" is the name of the branch.
+
+### 5. Explain what main is in git push origin main.
+Answer:
+- In the command git push origin main, "main" is the name of the branch you want to push to the remote repository.
+
+### 6. Explain the two-stage system that Git uses to save files.
+ANswer:
+-Git uses a two-stage system to save files, which is often referred to as the "staging area" or "index." This system allows for more control and flexibility in managing changes before they are committed to the repository. The two stages are:
+
+1. Working Directory: The working directory is the directory on your local machine where you are actively making changes to files in your Git repository. When you modify, create, or delete files in this directory, Git recognizes those changes as "unstaged" changes.
+
+2. Staging Area (Index): The staging area is an intermediate step between the working directory and the Git repository. It acts as a holding area where you can add specific changes from your working directory before committing them to the repository. When you "stage" changes, you are marking them as ready to be included in the next commit.
+
+### 7. How do you check the status of your current repository?
+Answer: 
+- To check the status of your current repository in Git, you can use the git status command. This command provides information about the current state of your working directory and the staging area (index) compared to the latest commit in your repository. It shows what files have been modified, added, or deleted, and whether these changes are staged or not
+
+### 8. How do you add files to the staging area in git?
+Answer: 
+- To add files to the staging area in Git, you use the git add command. The git add command is used to add changes from the working directory to the staging area, preparing them to be included in the next commit. When you add changes to the staging area, you are telling Git that you want these specific changes to be part of the next commit.
+
+### 9. How do you commit the files in the staging area and add a descriptive message?
+Answer:
+-To commit the files in the staging area and add a descriptive message, you can use the git commit command with the -m option. The -m option allows you to provide a commit message directly from the command line, describing the changes you are committing. The commit message should be a brief and informative description of the changes introduced in the commit.
+
+### 10. How do you push your changes to your repository on GitHub?
+Answer: 
+- Push your changes: To push your committed changes to your GitHub repository, use the git push command followed by the remote name and the branch name you want to push to. For example, if you are pushing changes to the "main" branch, and the remote name is "origin," you would use the following command:
+
+### git push origin main
+- If you are using a different branch, replace "main" with the name of your branch.
+
+### 11. How do you look at the history of your previous commits?
+Answer:
+- To view the history of your previous commits in Git, you can use the git log command. The git log command displays a chronological list of commits in your repository, showing commit information such as the commit hash, author, date, and commit message.
